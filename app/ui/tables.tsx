@@ -4,7 +4,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { getAllUsers, getUser } from '../lib/apiService';
 import { Delete, ModeEditOutlineOutlined } from '@mui/icons-material';
 
-const columns: GridColDef<(typeof rows)[number]>[] = [
+const columns: GridColDef<any>[] = [
 	{ field: '_id', headerName: 'userId', width: 250 },
 	{
 		field: 'firstName',
